@@ -18,7 +18,9 @@ tag:
 2. __如果某随机变量发生概率越低，它却发生了，这时候包含的信息越多；反之一个不太可能的事情没有发生，实际包含的信息越少__, 所以 $h(x)$ 是 $p(x)$ 的单调递减函数，即 $$
 h(x)=f(p(x))
 $$ 其中 $f$ 单调递减
-3. 对于不相关随机变量 $x,y$，两事件同时发生带来的信息应该等于各自信息量之和，所以有 $h(x, y)=h(x)+h(y)$，即$$
+3. 对于不相关随机变量 $x,y$，两事件同时发生带来的信息应该等于各自信息量之和，所以有 $h(x, y)=h(x)+h(y)$，即
+
+$$
 \begin{aligned}
 & h(x, y)=f(p(x, y))=f(p(x) p(y)) \\
 & h(x)+h(y)=f(p(x))+f(p(y))
@@ -26,6 +28,7 @@ $$ 其中 $f$ 单调递减
 $$
 
 综合以上三点，可以证明[^2]
+
 $$
 \left\{\begin{array}{l}
 f(a \cdot b)=f(a)+f(b) \\
@@ -33,11 +36,15 @@ f(a) \downarrow a \in(0,+\infty) \\
 f(a)>0
 \end{array}\right.
 $$
+
 满足上式的 $f(x)$ 只有对数函数，所以定义一个随机变量的的信息为
+
 $$
 h(x)=-\log _2 p(x)
 $$
+
 信息熵（entropy of the random variable）指的是随机变量包含信息的期望
+
 $$
 \mathrm{H}[x]=E(h(x))-\sum_x p(x) \log _2 p(x)=-\int p(\mathbf{x}) \ln p(\mathbf{x}) \mathrm{d} \mathbf{x}
 $$
