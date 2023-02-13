@@ -49,10 +49,13 @@ $$
 
 ## 2. 条件熵
 条件熵描述了在已知第二个随机变量 $x$ 已知条件下 $y$ 所带来的信息
+
 $$
 \mathrm{H}[\mathbf{y} \mid \mathbf{x}]=\int p(y \mid x) \ln p(y \mid x) d y \int p(x) d x=-\iint p(\mathbf{y}, \mathbf{x}) \ln p(\mathbf{y} \mid \mathbf{x}) \mathrm{d} \mathbf{y} \mathrm{d} \mathbf{x}
 $$
+
 可以证明
+
 $$
 \mathrm{H}[\mathbf{x}, \mathbf{y}]=\mathrm{H}[\mathbf{y} \mid \mathbf{x}]+\mathrm{H}[\mathbf{x}]
 $$
