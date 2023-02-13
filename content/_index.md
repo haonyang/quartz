@@ -7,6 +7,7 @@ Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-th
 
 This is a test?????????????
 [[notes/信息熵（information entropy）]]
+[[notes/菜单]]
 
 1. Extremely fast natural-language [[notes/search]]
 2. Customizable and hackable design based on [Hugo](https://gohugo.io/)
